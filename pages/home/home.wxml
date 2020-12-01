@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<view class="nav">
+  <scroll-view scroll-x="true" class="scroll-view">
+    <view class="scrollview">
+      <view><view class="{{currentIndex == 0 ? 'select' : 'normal'}}" id="0" bindtap="swiperNav">推荐</view></view>
+      <view><view class="{{currentIndex == 1 ? 'select' : 'normal'}}" id="1" bindtap="swiperNav">视频</view></view>
+      <view><view class="{{currentIndex == 2 ? 'select' : 'normal'}}" id="2" bindtap="swiperNav">图文</view></view>
+      <view><view class="{{currentIndex == 3 ? 'select' : 'normal'}}" id="3" bindtap="swiperNav">游戏</view></view>
+      <view><view class="{{currentIndex == 4 ? 'select' : 'normal'}}" id="4" bindtap="swiperNav">精华</view></view>
+    </view>
+  </scroll-view>
+</view>  
+<swiper current="{{currentIndex}}">
+  <swiper-item>
+    推荐内容
+  </swiper-item>
+  <swiper-item>
+    视频内容
+  </swiper-item>
+  <swiper-item>
+    图文内容
+  </swiper-item>
+  <swiper-item>
+    游戏内容
+  </swiper-item>
+  <swiper-item>
+    精华内容
+  </swiper-item>
+</swiper>
