@@ -1,31 +1,91 @@
 /* pages/home/home.wxss */
 .nav {
   width: 100%;
-  height: 50px;
+  height: 100rpx;
   background-color: #FFBA1E;
   color: #ffffff;
 }
 .scrollview {
   width: 70%;
-  height: 50px;
+  height: 100rpx;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 30rpx;
 }
 .select {
-  width: 50px;
-  height: 30px;
+  width: 100rpx;
+  height: 60rpx;
   text-align: center;
-  line-height: 30px;
+  line-height: 60rpx;
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
+  flex-shrink: 0;
 }
 .normal {
-  width: 50px;
-  height: 30px;
+  width: 100rpx;
+  height: 60rpx;
   text-align: center;
-  line-height: 30px;
+  line-height: 60rpx;
   font-size: 20px;
-  margin-left: 20px;
+  margin-left: 40rpx;
+  flex-shrink: 0;
+}
+/* 推荐区域 */
+.line {
+  height: 20rpx;
+  background: #f2f2f2;
+}
+.item {
+  margin:20rpx;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 154rpx;
+  align-items: center;
+}
+.title{
+  width: 60%;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.hot {
+  width: 30%;
+  text-align: right;
+}
+.text{
+  line-height: 50rpx;
+  padding: 20rpx;
+}
+.votes{
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.emoji{
+  padding: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.emoji image{
+  width: 25%;
+  margin:0 auto;
+}
+.emoji image:nth-child(4){
+  text-align: right;
+}
+/* 视频区域 */
+.video {
+  text-align: center;
+}
+/* 图片区域 */
+.attachments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.attachments view {
+  width: 100px;
+  margin-left:10px;
 }

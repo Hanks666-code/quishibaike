@@ -1,0 +1,34 @@
+<view class="items">
+        <block wx:for="{{imageArray}}">
+          <view class="item">
+            <view class="top">
+              <view><image src="{{item.user.thumb}}" style="width:90rpx;height:90rpx;"></image></view>
+              <view class="title"><text>{{item.user.login}}</text></view>
+              <view class="hot">
+                <image src="../../images/icon/hot.jpg" style="width:30rpx;height:30rpx;"></image>热门
+              </view>
+            </view>
+            <!-- 文本内容 -->
+            <view class="text">
+              <text>{{item.content}}</text>
+            </view>
+            <!-- 图片区域 -->
+            <view class="image">
+              <view wx:if="{{item.attachments}}" class="attachments">
+                <view wx:for="{{item.attachments}}" wx:for-item="item1">
+                  <image src="{{item1.origin_url}}" style="width:100%;"></image>
+                </view>
+              </view>
+              <block wx:else=""><image src="{{item.high_url}}"></image></block>
+            </view>
+            <view class="votes">喜欢：{{item.votes.up}}  不喜欢：{{item.votes.down}}  评论：{{item.comments_count}}   转发：{{item.share_count}}</view>
+            <view class="emoji">
+              <image src="../../images/icon/xiao.jpg" style="width:46rpx;height:46rpx;"></image>
+              <image src="../../images/icon/ku.jpg" style="width:46rpx;height:46rpx;"></image>
+              <image src="../../images/icon/pinglun.jpg" style="width:46rpx;height:46rpx;"></image>
+              <image src="../../images/icon/fenxiang.jpg" style="width:46rpx;height:46rpx;"></image>
+            </view>
+          </view>
+          <view class="line"></view>
+        </block>
+</view>
